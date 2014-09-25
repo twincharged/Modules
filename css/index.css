@@ -1,0 +1,367 @@
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway/Raleway-Light.ttf");
+}
+html,
+body {
+  background: #141414;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+  font-family: Raleway;
+  letter-spacing: 1px;
+}
+.box {
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  text-decoration: none;
+  line-height: 100px;
+  font-size: 22px;
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  height: 100px;
+  width: 200px;
+}
+.box:hover {
+  text-decoration: none;
+  color: #fff;
+}
+/* 
+   SVG hover effect.
+   Credit: cssdeck.com/labs/svg-border-hover-effect-1
+*/
+.dashed {
+  position: relative;
+  margin: 25px auto;
+  width: 320px;
+}
+.dashed:hover rect,
+.dashed:active rect {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+.dashed rect {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid #000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.dashed span {
+  position: relative;
+  top: -46px;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  line-height: 32px;
+  font-size: 20px;
+  color: #fff;
+}
+/* 
+   Hover transitions.
+   Inspired by:
+   tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+*/
+.zest-outer::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+.zest-outer::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+.zest-outer::before,
+.zest-outer::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-outer:hover::before,
+.zest-outer:hover::after,
+.zest-outer:active::before,
+.zest-outer:active::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-xwing::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+.zest-xwing::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+.zest-xwing::before,
+.zest-xwing::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-xwing:hover::before,
+.zest-xwing:hover::after,
+.zest-xwing:active::before,
+.zest-xwing:active::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-focus::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: scale(2, 1);
+  -moz-transform: scale(2, 1);
+  -ms-transform: scale(2, 1);
+  transform: scale(2, 1);
+}
+.zest-focus::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: scale(1, 2);
+  -moz-transform: scale(1, 2);
+  -ms-transform: scale(1, 2);
+  transform: scale(1, 2);
+}
+.zest-focus::before,
+.zest-focus::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-focus:hover::before,
+.zest-focus:hover::after,
+.zest-focus:active::before,
+.zest-focus:active::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-bounce::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: scale(-1.6, 0.8);
+  -moz-transform: scale(-1.6, 0.8);
+  -ms-transform: scale(-1.6, 0.8);
+  transform: scale(-1.6, 0.8);
+}
+.zest-bounce::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: scale(0.8, -1.6);
+  -moz-transform: scale(0.8, -1.6);
+  -ms-transform: scale(0.8, -1.6);
+  transform: scale(0.8, -1.6);
+}
+.zest-bounce::before,
+.zest-bounce::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-bounce:hover::before,
+.zest-bounce:hover::after,
+.zest-bounce:active::before,
+.zest-bounce:active::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-enclose::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: scale(1, 2);
+  -moz-transform: scale(1, 2);
+  -ms-transform: scale(1, 2);
+  transform: scale(1, 2);
+}
+.zest-enclose::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: scale(2, 1);
+  -moz-transform: scale(2, 1);
+  -ms-transform: scale(2, 1);
+  transform: scale(2, 1);
+}
+.zest-enclose::before,
+.zest-enclose::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-enclose:hover::before,
+.zest-enclose:hover::after,
+.zest-enclose:active::before,
+.zest-enclose:active::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-expand::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border: 2px solid #fff;
+  content: "";
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-expand:hover::before,
+.zest-expand:active::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-contract::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border: 2px solid #fff;
+  content: "";
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-contract:hover::before,
+.zest-contract:active::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.zest-corners::before {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.zest-corners::after {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.zest-corners::before,
+.zest-corners::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transform: scale(0.05, 0.05);
+  -moz-transform: scale(0.05, 0.05);
+  -ms-transform: scale(0.05, 0.05);
+  transform: scale(0.05, 0.05);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zest-corners:hover::before,
+.zest-corners:hover::after,
+.zest-corners:active::before,
+.zest-corners:active::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
