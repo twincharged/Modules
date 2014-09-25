@@ -80,7 +80,7 @@
   -ms-transform: scale(1);
   transform: scale(1);
 }
-.zest-xwing::before {
+.zest-target::before {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   -webkit-transform: scale(1, 0);
@@ -88,7 +88,7 @@
   -ms-transform: scale(1, 0);
   transform: scale(1, 0);
 }
-.zest-xwing::after {
+.zest-target::after {
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
   -webkit-transform: scale(0, 1);
@@ -96,8 +96,8 @@
   -ms-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-.zest-xwing::before,
-.zest-xwing::after {
+.zest-target::before,
+.zest-target::after {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -110,10 +110,10 @@
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.zest-xwing:hover::before,
-.zest-xwing:hover::after,
-.zest-xwing:active::before,
-.zest-xwing:active::after {
+.zest-target:hover::before,
+.zest-target:hover::after,
+.zest-target:active::before,
+.zest-target:active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
