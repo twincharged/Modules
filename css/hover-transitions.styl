@@ -59,22 +59,22 @@ placement(tp, rt, bm, lt)
 
 // Base before & after transition
 
-$zest-ba($bx, $by, $ax, $ay, $tran=.5s)
+$zest-ba(bx, by, ax, ay, time=.5s)
     &::before
         border-top: $border
         border-bottom: $border
-        vendor("transform", scale($bx,$by))
+        vendor("transform", scale(bx,by))
     &::after
         border-left: $border
         border-right: $border
-        vendor("transform", scale($ax,$ay))
+        vendor("transform", scale(ax,ay))
     &::before,
     &::after
         position: absolute
         placement(0px,0px,0px,0px)
         content: ""
         opacity: 0
-        vendor("transition", all $tran)
+        vendor("transition", all time)
     &:hover::before,
     &:hover::after,
     &:active::before,
@@ -84,15 +84,15 @@ $zest-ba($bx, $by, $ax, $ay, $tran=.5s)
 
 // Base before transition
 
-$zest-b($scale, $tran=.5s)
+$zest-b(sc, time=.5s)
     &::before
         position: absolute
         placement(0px,0px,0px,0px)
         border: $border
         content: ""
         opacity: 0
-        vendor("transform", scale($scale))
-        vendor("transition", all $tran)
+        vendor("transform", scale(sc))
+        vendor("transition", all time)
     &:hover::before,
     &:active::before
         opacity: 1
