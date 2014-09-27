@@ -1,4 +1,11 @@
 $light = #fff
+$dark = #141414
+
+vendor(prop, args...)
+    -webkit-{prop} args
+    -moz-{prop} args
+    -ms-{prop} args
+    {prop} args
 
 @font-face
     font-family: Raleway
@@ -7,7 +14,7 @@ $light = #fff
 
 html,
 body
-    background: rgb(20,20,20)
+    background: $dark
     text-align: center
     height: 100%
     overflow: hidden
