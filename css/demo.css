@@ -7,7 +7,6 @@ body {
   background: #141414;
   text-align: center;
   height: 100%;
-  overflow: hidden;
   font-family: Raleway;
   letter-spacing: 1px;
 }
@@ -26,4 +25,18 @@ body {
 .box:hover {
   text-decoration: none;
   color: #fff;
+}
+section#vectors {
+  margin-top: 225px;
+}
+section#vectors .vect svg {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+section#vectors #svg-ruler {
+  margin: -50px;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  transform: rotate(-70deg);
 }

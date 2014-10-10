@@ -1,19 +1,19 @@
 /* 
    SVG hover effect.
-   Credit: cssdeck.com/labs/svg-border-hover-effect-1
+   From: cssdeck.com/labs/svg-border-hover-effect-1
 */
-.dashed {
+.liquid {
   position: relative;
   margin: 25px auto;
   width: 320px;
 }
-.dashed:hover rect,
-.dashed:active rect {
+.liquid:hover rect,
+.liquid.active rect {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
 }
-.dashed rect {
+.liquid rect {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 8px;
@@ -25,13 +25,13 @@
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.dashed span {
+.liquid span {
   position: relative;
   top: -46px;
   font-family: "Roboto Condensed";
   text-transform: uppercase;
   letter-spacing: 5px;
-  line-height: 32px;
+  line-height: 125%;
   font-size: 20px;
   color: #fff;
 }
@@ -72,8 +72,8 @@
 }
 .zest-outer:hover::before,
 .zest-outer:hover::after,
-.zest-outer:active::before,
-.zest-outer:active::after {
+.zest-outer.active::before,
+.zest-outer.active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -112,8 +112,8 @@
 }
 .zest-target:hover::before,
 .zest-target:hover::after,
-.zest-target:active::before,
-.zest-target:active::after {
+.zest-target.active::before,
+.zest-target.active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -152,8 +152,8 @@
 }
 .zest-focus:hover::before,
 .zest-focus:hover::after,
-.zest-focus:active::before,
-.zest-focus:active::after {
+.zest-focus.active::before,
+.zest-focus.active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -192,8 +192,8 @@
 }
 .zest-bounce:hover::before,
 .zest-bounce:hover::after,
-.zest-bounce:active::before,
-.zest-bounce:active::after {
+.zest-bounce.active::before,
+.zest-bounce.active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -232,8 +232,8 @@
 }
 .zest-enclose:hover::before,
 .zest-enclose:hover::after,
-.zest-enclose:active::before,
-.zest-enclose:active::after {
+.zest-enclose.active::before,
+.zest-enclose.active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -259,7 +259,7 @@
   transition: all 0.5s;
 }
 .zest-expand:hover::before,
-.zest-expand:active::before {
+.zest-expand.active::before {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -285,7 +285,7 @@
   transition: all 0.5s;
 }
 .zest-contract:hover::before,
-.zest-contract:active::before {
+.zest-contract.active::before {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -328,8 +328,8 @@
 }
 .zest-corners:hover::before,
 .zest-corners:hover::after,
-.zest-corners:active::before,
-.zest-corners:active::after {
+.zest-corners.active::before,
+.zest-corners.active::after {
   opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);

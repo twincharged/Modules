@@ -17,7 +17,6 @@ body
     background: $dark
     text-align: center
     height: 100%
-    overflow: hidden
     font-family: Raleway
     letter-spacing: 1px
 
@@ -36,3 +35,12 @@ body
     &:hover
         text-decoration: none
         color: $light
+
+section#vectors
+    margin-top: 225px
+    & .vect svg
+        margin-top: 90px
+        margin-bottom: 90px
+    #svg-ruler
+        margin: -50px
+        vendor("transform", rotate(-70deg))

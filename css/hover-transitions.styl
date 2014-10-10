@@ -16,15 +16,15 @@ placement(tp, rt, bm, lt)
 
 /* 
    SVG hover effect.
-   Credit: cssdeck.com/labs/svg-border-hover-effect-1
+   From: cssdeck.com/labs/svg-border-hover-effect-1
 */
 
-.dashed
+.liquid
     position: relative
     margin: 25px auto
     width: 320px
     &:hover,
-    &:active
+    &.active
         & rect
             stroke-width: 2px
             stroke-dashoffset: 0
@@ -43,7 +43,7 @@ placement(tp, rt, bm, lt)
         font-family: "Roboto Condensed"
         text-transform: uppercase
         letter-spacing: 5px
-        line-height: 32px
+        line-height: 125%
         font-size: 20px
         color: #fff
 
@@ -77,8 +77,8 @@ $zest-ba(bx, by, ax, ay, tm=.5s)
         vendor("transition", all tm)
     &:hover::before,
     &:hover::after,
-    &:active::before,
-    &:active::after
+    &.active::before,
+    &.active::after
         opacity: 1
         vendor("transform", scale(1))
 
@@ -94,7 +94,7 @@ $zest-b(sc, tm=.5s)
         vendor("transform", scale(sc))
         vendor("transition", all tm)
     &:hover::before,
-    &:active::before
+    &.active::before
         opacity: 1
         vendor("transform", scale(1))
 
@@ -141,7 +141,7 @@ $zest-b(sc, tm=.5s)
         vendor("transition", all .5s)
     &:hover::before,
     &:hover::after,
-    &:active::before,
-    &:active::after
+    &.active::before,
+    &.active::after
         opacity: 1
         vendor("transform", scale(1))

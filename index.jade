@@ -14,7 +14,7 @@ html(lang="en")
       .container
         .row
           .col-md-12
-            .dashed
+            .liquid
               svg(height="60" width="320" xmlns="http://www.w3.org/2000/svg")
                 rect(height="60" width="320")
                 span Add some Zest
@@ -36,3 +36,34 @@ html(lang="en")
             a.box.zest-focus(href="#") Focus
           .col-md-3
             a.box.zest-enclose(href="#") Enclose
+
+
+
+    section#vectors
+      .container
+        .row
+          .col-md-12
+            .liquid
+              svg(height="60" width="320" xmlns="http://www.w3.org/2000/svg")
+                rect(height="60" width="320")
+                span Vector Magic
+      .container
+        .row
+          .col-md-6.vect
+            include ./vectors/code.jade
+          .col-md-6.vect
+            include ./vectors/ruler.jade
+        .row
+          .col-md-12.vect
+            include ./vectors/mac.jade
+        .row
+          .col-md-6.vect
+            include ./vectors/ipad.jade
+          .col-md-6.vect
+            include ./vectors/iphone.jade
+
+
+
+
+
+    script(src="js/svg-draw.js")
