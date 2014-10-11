@@ -10,8 +10,9 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  *
- * ML: If you ever see this, thank you so, so much!!!
  */
+
+/* ML: If you see this, thank you so much!!! */
 
 (function() {
 
