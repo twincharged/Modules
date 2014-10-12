@@ -134,7 +134,7 @@
             // if 0, the element is considered in the viewport as soon as it enters.
             // if 1, the element is considered in the viewport only when it's fully inside
             // value in percentage (1 >= h >= 0)
-            h = h || 0;
+            h = h || 1;
  
         return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
     }

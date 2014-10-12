@@ -9,27 +9,36 @@ body {
   height: 100%;
   font-family: Raleway;
   letter-spacing: 1px;
-}
-.box {
-  position: relative;
-  margin: 10px 10px 10px 10px;
-  text-decoration: none;
-  line-height: 100px;
   font-size: 22px;
-  cursor: pointer;
-  display: block;
-  color: #fff;
-  height: 100px;
-  width: 200px;
 }
-.box:hover {
-  text-decoration: none;
-  color: #fff;
+html .container,
+body .container {
+  padding: 25px 5px 5px 25px;
+  margin: auto;
+  width: 100%;
 }
-section#vectors {
-  margin-top: 225px;
+html .col,
+body .col {
+  text-align: center;
 }
-section#vectors .vect svg {
+html .col *,
+body .col * {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 501px) and (max-width: 650px) {
+  body {
+    font-size: 3vw;
+  }
+}
+section {
+  margin-bottom: 100px;
+}
+section .title {
+  margin-bottom: 75px;
+}
+section .vect svg {
   margin-top: 90px;
   margin-bottom: 90px;
 }
@@ -47,4 +56,19 @@ section#vectors #svg-pencil {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.box {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  line-height: 100px;
+  cursor: pointer;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  max-width: 200px;
+}
+.box:hover {
+  text-decoration: none;
+  color: #fff;
 }

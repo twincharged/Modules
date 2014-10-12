@@ -19,28 +19,34 @@ body
     height: 100%
     font-family: Raleway
     letter-spacing: 1px
-
-
-.box
-    position: relative
-    margin: 10px 10px 10px 10px
-    text-decoration: none
-    line-height: 100px
     font-size: 22px
-    cursor: pointer
-    display: block
-    color: $light
-    height: 100px
-    width: 200px
-    &:hover
-        text-decoration: none
-        color: $light
+    .container
+        padding: 25px 5px 5px 25px
+        margin: auto
+        width: 100%
+    .col
+        text-align: center
+        & *
+            display: inline-block
+            margin: auto
+            text-align: center
+@media (min-width: 501px) and (max-width: 650px)
+  body
+    font-size: 3vw
 
-section#vectors
-    margin-top: 225px
-    & .vect svg
+
+section
+    margin-bottom: 100px
+    .title
+        margin-bottom: 75px
+    .vect svg
         margin-top: 90px
         margin-bottom: 90px
+
+
+
+
+section#vectors
     #svg-ruler
         margin: -50px
         vendor("transform", rotate(-70deg))
@@ -48,3 +54,21 @@ section#vectors
         margin-top: 50px
         margin-left: -50px
         vendor("transform", rotate(45deg))
+
+
+
+
+
+.box
+    position: relative
+    display: block
+    text-decoration: none
+    line-height: 100px
+    cursor: pointer
+    color: $light
+    height: 100%
+    width: 100%
+    max-width: 200px
+    &:hover
+        text-decoration: none
+        color: $light
