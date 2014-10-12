@@ -5,68 +5,53 @@ html(lang="en")
     title Modules
     meta(charset="utf-8")
     meta(name="description" content="")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(href="css/bootstrap.min.css" rel="stylesheet")
+    link(href="css/grid.min.css" rel="stylesheet")
     link(href="css/hover-transitions.css" rel="stylesheet")
     link(href="css/demo.css" rel="stylesheet")
   body
     section#hover-transitions
       .container
         .row
-          .col-md-12
+          .col-12
             .liquid
               svg(height="60" width="320" xmlns="http://www.w3.org/2000/svg")
                 rect(height="60" width="320")
                 span Add some Zest
         .row
-          .col-md-3
-            a.box.zest-outer(href="#") Outer
-          .col-md-3
-            a.box.zest-target(href="#") Target
-          .col-md-3
-            a.box.zest-bounce(href="#") Bounce
-          .col-md-3
-            a.box.zest-corners(href="#") Corners
+          .col-3: a.box.zest-outer(href="#") Outer
+          .col-3: a.box.zest-target(href="#") Target
+          .col-3: a.box.zest-bounce(href="#") Bounce
+          .col-3: a.box.zest-corners(href="#") Corners
         .row
-          .col-md-3
-            a.box.zest-expand(href="#") Expand
-          .col-md-3
-            a.box.zest-contract(href="#") Contract
-          .col-md-3
-            a.box.zest-focus(href="#") Focus
-          .col-md-3
-            a.box.zest-enclose(href="#") Enclose
+          .col-3: a.box.zest-expand(href="#") Expand
+          .col-3: a.box.zest-contract(href="#") Contract
+          .col-3: a.box.zest-focus(href="#") Focus
+          .col-3: a.box.zest-enclose(href="#") Enclose
 
 
 
     section#vectors
       .container
         .row
-          .col-md-12
+          .col-12
             .liquid
               svg(height="60" width="320" xmlns="http://www.w3.org/2000/svg")
                 rect(height="60" width="320")
                 span Vector Magic
       .container
         .row
-          .col-md-6.vect
-            include ./vectors/code.jade
-          .col-md-6.vect
-            include ./vectors/ruler.jade
+          .col-6.vect: include ./vectors/code.jade
+          .col-6.vect: include ./vectors/ruler.jade
         .row
-          .col-md-12.vect
-            include ./vectors/thr.jade
+          .col-12.vect: include ./vectors/thr.jade
         .row
-          .col-md-12.vect
-            include ./vectors/mac.jade
+          .col-12.vect: include ./vectors/mac.jade
         .row
-          .col-md-6.vect
-            include ./vectors/ipad.jade
-          .col-md-6.vect
-            include ./vectors/iphone.jade
+          .col-6.vect: include ./vectors/ipad.jade
+          .col-6.vect: include ./vectors/iphone.jade
         .row
-          .col-md-6.vect
-            include ./vectors/pencil.jade
+          .col-6.vect: include ./vectors/pencil.jade
+          .col-6.vect: include ./vectors/server.jade
 
 
 

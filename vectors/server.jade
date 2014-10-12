@@ -1,0 +1,13 @@
+svg#svg-server(width="100%" height="300" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 52")
+  g(stroke="#fff" stroke-width="1" fill="none" fill-rule="evenodd")
+    //- The separate path in #server-front is used to increase the path length and speed
+    //- up the drawing of #server-back. Super hacky, but it makes the transit smoother.
+    path#server-front(d="m35,50 h-20 v-40 h20 v40.5    M100,100 h10")
+    path#server-back(d="m35.15,9.85 l-15,-8 h-20 v40.22 l14.65,8    M15,10 l-15,-8 ")
+    path#server-drives(d="M19,17 h12 m-12,2 h12 m-12,2 h12" stroke-width=".5")
+    rect#server-b1(x="19.5" y="25.25" width="1.5" height="1.5" stroke-width=".4")
+    circle#server-b2(cx="24.4" cy="26" r=".5" stroke-width=".25")
+    circle#server-b3(cx="26.4" cy="26" r=".5" stroke-width=".25")
+    circle#server-b4(cx="28.4" cy="26" r=".5" stroke-width=".25")
+    circle#server-b5(cx="30.4" cy="26" r=".5" stroke-width=".25")
+
