@@ -1,3 +1,5 @@
+@import "flex-grid.styl"
+@import "hover-transitions.styl"
 $light = #fff
 $dark = #141414
 
@@ -20,19 +22,17 @@ body
     font-family: Raleway
     letter-spacing: 1px
     font-size: 22px
-    .container
-        padding: 25px 5px 5px 25px
-        margin: auto
-        width: 100%
     .col
         text-align: center
         & *
             display: inline-block
-            margin: auto
+            margin: 0 auto
             text-align: center
-@media (min-width: 501px) and (max-width: 650px)
-  body
-    font-size: 3vw
+@media (min-width:501px) and (max-width:620px)
+    html,
+    body
+        font-size: 3.5vw
+
 
 
 section
@@ -42,9 +42,21 @@ section
     .vect svg
         margin-top: 90px
         margin-bottom: 90px
-
-
-
+    .rotated
+        overflow: hidden
+    .box
+        position: relative
+        display: block
+        text-decoration: none
+        line-height: 100px
+        cursor: pointer
+        color: $light
+        height: 100%
+        width: 100%
+        max-width: 200px
+        &:hover
+            text-decoration: none
+            color: $light
 
 section#vectors
     #svg-ruler
@@ -57,18 +69,3 @@ section#vectors
 
 
 
-
-
-.box
-    position: relative
-    display: block
-    text-decoration: none
-    line-height: 100px
-    cursor: pointer
-    color: $light
-    height: 100%
-    width: 100%
-    max-width: 200px
-    &:hover
-        text-decoration: none
-        color: $light
